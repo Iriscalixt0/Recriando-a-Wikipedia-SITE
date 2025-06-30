@@ -30,6 +30,7 @@ O layout se adapta para diferentes tamanhos de tela (desktop, tablet e mobile), 
 
 ## 📸 Preview
 
+![Captura de tela 2025-06-30 180127](https://github.com/user-attachments/assets/346166a9-a73c-4d6a-8fc9-e697fd967487)
 
 
 ## 🚀 Como usar
