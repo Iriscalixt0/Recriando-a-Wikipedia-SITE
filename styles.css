@@ -1,0 +1,400 @@
+/* Import da fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #F5F7FA;
+  color: #1E1E1E;
+  line-height: 1.6;
+}
+
+/* Estilo para o h1 "Novapedia" */
+h1 {
+  font-size: 2rem;
+  color: #0B3D91;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Cabeçalho compacto e horizontal */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 0.5rem 1.5rem;
+  border-bottom: 1px solid #D1D5DB;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 24px;
+}
+
+nav a.hamburger span {
+  height: 2px;
+  background: #0B3D91;
+  border-radius: 1px;
+}
+
+header img {
+  height: 100px;
+  width: 100px;
+}
+
+header h1 {
+  font-size: 1.25rem;
+  color: #0B3D91;
+  font-weight: 600;
+  margin-left: 1rem;
+  margin-right: auto;
+}
+
+/* Menu principal horizontal */
+.menu-principal ul {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+  padding-left: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.menu-principal ul li a {
+  text-decoration: none;
+  color: #2563EB;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover simples para links do menu */
+.menu-principal ul li a:hover {
+  background-color: #2563EB;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Busca alinhada */
+header form {
+  display: flex;
+  flex: 1;
+  max-width: 300px;
+  margin-left: 1.5rem;
+}
+
+header input[type="text"] {
+  padding: 0.4rem;
+  border: 1px solid #D1D5DB;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+header button {
+  padding: 0.4rem 0.8rem;
+  background-color: #2563EB;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header button:hover {
+  background-color: #1D4ED8;
+}
+
+/* Menu Wikipedia-style */
+.menu-wiki {
+  background-color: #F8F9FA;
+  border-bottom: 1px solid #D1D5DB;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.menu-wiki ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  gap: 1.2rem;
+}
+
+.menu-wiki li a {
+  color: #0B3D91;
+  text-decoration: none;
+  padding: 0.3rem 0.5rem;
+  transition: background 0.2s ease;
+}
+
+.menu-wiki li a:hover {
+  background-color: #DDE9FF;
+  border-radius: 4px;
+  text-decoration: underline;
+}
+
+/* Principal */
+main {
+  max-width: 800px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+/* Títulos */
+h2 {
+  font-size: 1.3rem;
+  color: #1E1E1E;
+  margin-top: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0.8rem 0;
+}
+
+/* Imagem da Ada à esquerda com legenda abaixo */
+figure {
+  float: right;
+  width: 150px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.6);
+  object-fit: cover;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  object-fit: cover;
+}
+
+figcaption {
+  font-size: 0.55rem;
+  color: #666666;
+  text-align: center;
+  margin-top: 0.3rem;
+  clear: none;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  figure {
+    float: none;
+    width: auto;
+    margin: 1rem auto;
+    display: block;
+    text-align: center;
+  }
+
+  figure img {
+    margin: 0 auto;
+    display: block;
+  }
+
+  figcaption {
+    text-align: center;
+  }
+}
+
+/* Bloco de citação */
+blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid #2563EB;
+  font-style: italic;
+  color: #555555;
+}
+
+/* Menu colapsável */
+input[type="checkbox"] {
+  display: none;
+}
+
+label[for="toggle-menu"] a,
+label[for="toggle-menuu"] a {
+  text-decoration: none;
+  color: inherit;
+}
+
+label[for="toggle-menu"],
+label[for="toggle-menuu"] {
+  display: block;
+  background: #EEEEEE;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-left: 3px solid #2563EB;
+  font-weight: 600;
+  user-select: none;
+}
+
+.menu-aspectos {
+  display: none;
+  margin-top: 0.5rem;
+}
+
+.menu-aspectos ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.menu-aspectos li {
+  margin: 0.5rem 0;
+}
+
+.menu-aspectos a {
+  color: #2563EB;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.menu-aspectos li a:hover {
+  background-color: #2563EB;
+  color: #fff;
+  text-decoration: none;
+}
+
+#toggle-menu:checked ~ .menu-aspectos {
+  display: block;
+}
+
+/* Seção "Veja também" com cards */
+.veja-tambem {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 2px solid #2563EB;
+}
+
+.veja-tambem h3 {
+  color: #2563EB;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  overflow: hidden;
+  flex: 1 1 calc(33% - 1rem);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.card h4 {
+  font-size: 1.1rem;
+  color: #2563EB;
+  margin: 0.5rem 1rem 0.3rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555555;
+  margin: 0 1rem 1rem;
+}
+
+.card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Estilo específico para o botão "Saiba mais" */
+.saiba-mais {
+  display: inline-block;
+  background-color: #2563EB;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(37, 99, 235, 0.4);
+}
+
+.saiba-mais:hover,
+.saiba-mais:focus {
+  background-color: #1D4ED8;
+  box-shadow: 0 6px 12px rgba(37, 99, 235, 0.6);
+  text-decoration: none;
+  outline: none;
+}
+
+/* Rodapé */
+footer {
+  margin: 2rem auto 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777777;
+  padding-bottom: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    padding: 0.8rem 1rem;
+  }
+
+  header form {
+    width: 100%;
+    margin: 0.6rem 0 0;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+}
